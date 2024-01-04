@@ -1,0 +1,55 @@
+[
+    {
+        "company": "Kyndryl Pvt Ltd",
+        "role": "Sr. Associate Software Engineer",
+        "duration": "2022-till now",
+        "projects": [
+            {
+                "name": "BCOVT",
+                "techStack": "Spring Boot ∙ MyBatis ∙ DB2 ∙ OpenShift ∙ Angular 12",
+                "description": "Developed a web application for efficient claims and insurance processing, utilizing Excel file conversion into payloads through 5 key components. Deployed on OpenShift for enhanced scalability and traffic management. Implemented <strong> LDAP + OAuth </strong> for API security and utilized Axway engine for effective traffic management among APIs."
+            }
+        ]
+    },
+    {
+        "company": "Seligent Pvt Ltd",
+        "role": "Full Stack Java Developer",
+        "duration": "2020-2022",
+        "projects": [
+            {
+                "name": "Service-PIP",
+                "techStack": "Spring Boot ∙ JPA ∙ Dynamo DB ∙ AmazonS3 + Mule Soft",
+                "description": "Developed a headless application enabling KONE users to retrieve data from legacy servers. Primarily designed for developers, it allows quick access to PDFs, documents, and images related to specific Bill of Materials through a collection of APIs, ensuring efficient data retrieval."
+            },
+            {
+                "name": "Service-SCIP",
+                "techStack": "Spring Boot ∙ JPA ∙ PgSql ∙ Angular ∙ AmazonS3 + Azure AD + EBS",
+                "description": "Developed SCIP, a web app for KONE Corp, using Spring Boot, JPA, pgsql, Angular, and integrated Amazon S3, Azure AD, and Elastic Beanstalk. Enables users to visualize business flow, access detailed info on Substances of Concern in Products, and upload files for substance and article data. Implemented robust security using <strong> Spring Security, Azure AD, and MSAL authorization</strong> . Data verification via IUCLID machine, with processed and raw files stored on Amazon S3."
+            }
+        ]
+    },
+    {
+        "company": "ADP",
+        "role": "Member Technical",
+        "duration": "2018-2020",
+        "projects": [
+            {
+                "name": "IS-HOME-Service",
+                "techStack": "Spring Boot ∙ JPA ∙ Hibernate ∙ Oracle ∙ Angular - Elastic Search",
+                "description": "Developed a specialized division within the IS-App application to display all client-triggered events, offering a seamless and user-friendly interface. Implemented individual client timelines for tracking activities and events. Events sourced from various systems within the insurance division are processed through the Event Framework, distributed to timelines and RED server. Additionally, created a Splunk dashboard to log event framework data, providing valuable insights and enabling quick business overviews."
+            },
+            {
+                "name": "Vision Viewer",
+                "techStack": "Spring Boot ∙ JPA ∙ Hibernate ∙ Oracle ∙ Angular",
+                "description": "Developed an in-house application as a substitute for a third-party tool, providing comprehensive recent and archived client information for the organization"
+            },
+            {
+                "name": "Career Connect",
+                "techStack": "Spring Boot ∙ JPA ∙ Hibernate ∙ Oracle ∙ Angular ∙ Kafka ∙ Amazon S3",
+                "description": "Developed an internal email application facilitating seamless communication among organization carriers. Users can send emails to clients and manage contacts, with direct client associations. The application stores email history for carriers/clients/users, allowing deletion by user preference. Utilized Amazon S3 for attachment and email storage and implemented Apache Kafka's Kafka Connect API for seamless data streaming."
+            }
+        ]
+    }
+    
+    
+]

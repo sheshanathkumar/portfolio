@@ -1,0 +1,31 @@
+[
+    {
+        "id":4,
+        "course":"MCA",
+        "year": "2018",
+        "from": "MNNIT, Prayagraj",
+        "marks" : "7.56 CPI"
+    },
+    {
+        "id":3,
+        "course":"BCA",
+        "year": "2015",
+        "from": "BNMU, Madhepura",
+        "marks" : "79.5%"
+    },
+    {
+        "id":2,
+        "course":"HSC",
+        "year": "2011",
+        "from": "BSEB",
+        "marks" : "65%"
+    },
+    {
+        "id":1,
+        "course":"SSC",
+        "year": "2009",
+        "from": "BSEB",
+        "marks" : "71%"
+    }
+    
+]
