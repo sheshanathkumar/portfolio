@@ -24,7 +24,7 @@
             {
                 "name": "Service-SCIP",
                 "techStack": "Spring Boot ∙ JPA ∙ PgSql ∙ Angular ∙ AmazonS3 ∙ Azure AD ∙ EBS",
-                "description": "Developed SCIP, a web app for KONE Corp, using Spring Boot, JPA, pgsql, Angular, and integrated Amazon S3, Azure AD, and Elastic Beanstalk. Enables users to visualize business flow, access detailed info on Substances of Concern in Products, and upload files for substance and article data. Implemented robust security using <strong> Spring Security, Azure AD, and MSAL authorization</strong> . Data verification via IUCLID machine, with processed and raw files stored on Amazon S3."
+                "description": "Developed SCIP, a web app for KONE Corp, using Spring Boot, JPA, pgsql, Angular, and integrated Amazon S3, Azure AD, and Elastic Beanstalk. Enables users to visualize business flow, access detailed info on Substances of Concern in Products, and upload files for substance and article data. Implemented robust security using <strong> Spring Security, Azure AD, and MSAL authorization</strong>. Data verification via IUCLID machine, with processed and raw files stored on Amazon S3."
             }
         ]
     },
@@ -50,6 +50,4 @@
             }
         ]
     }
-    
-    
 ]

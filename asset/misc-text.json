@@ -1,25 +1,25 @@
 {
     "name": "Sheshanath Kumar",
-    "tag" : "Associate Senior Software Engineer at Kyndryl",
-    "baseline" : "+5 yrs Full Stack Java Developer",
+    "tag": "Associate Senior Software Engineer at Kyndryl",
+    "baseline": "5+ Yrs Full Stack Java Developer",
     "aboutMe": "With over five years of experience in software engineering, I am a dedicated and skilled professional adept at developing robust applications and ensuring their seamless deployment. My expertise lies in <strong>Java, Spring Boot, JPA, Microservice REST, AWS </strong> and various other technologies. I have a passion for problem-solving and a proven track record of handling complex challenges in the software development lifecycle, I am committed to driving innovation and delivering high-quality solutions.",
     "phone": "(+91) 8210-8854-14",
     "email": "sheshanath.kumar@gmail.com",
     "linkedIn": "linkedin.com/in/sheshanathkumar",
-    "company" : "Kyndryl Pvt Ltd",
-    "location" : "Hyderabad",
-    "roles" : [
+    "company": "Kyndryl Pvt Ltd",
+    "location": "Hyderabad",
+    "roles": [
         "Application development and deployment",
-        "API creation , Management , testing",
+        "API creation, Management and testing",
         "Maintain deployed application Cloud/ Local server",
         "Code Review, Assurance of Code Quality",
         "create and manage Splunk Database for applications",
         "CICD pipeline maintenance"
     ],
-    "achievement" : [
-        "Successfully Migrated BCOVT app from struts to Springboot with full quality check and 90+ code coverage",
+    "achievement": [
+        "Successfully Migrated BCOVT app from struts to Springboot with full quality check and 90% code coverage.",
         "Automated deployement of multiple applications on AWS-EBS with complete cicd.",
-        "Created interactive dashboards on splunk for bussiness flow",
-        "Handle end-to-end production deployment of multiple applications on AWS"
+        "Created interactive dashboards on splunk for bussiness flow.",
+        "Handle end-to-end production deployment of multiple applications on AWS."
     ]
 }
