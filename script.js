@@ -50,8 +50,8 @@ const aboutMe = async () => {
     h.innerHTML = aboutMe;
     getAboutMeId.appendChild(h);
 
-    myContact.innerHTML = 
-    `
+    myContact.innerHTML =
+        `
     <h6> ${phone} </h6>
     <h6> ${email} </h6>
     <h6> ${linkedIn} </h6>
@@ -64,14 +64,14 @@ const aboutMe = async () => {
                 <h6>${baseline}</h6>
     `
 
-    let myRoles = roles.map( (x) => {
-        return `<h6> ${x}</h6>`
-    } ).join("");
+    let myRoles = roles.map((x) => {
+        return `<h6><span>&#8226;</span> ${x}.</h6>`
+    }).join("");
     roleId.innerHTML = myRoles;
 
-    let myAchieve = achievement.map( (x) => {
-        return `<h6>${x}</h6>`
-    } ).join("");
+    let myAchieve = achievement.map((x) => {
+        return `<h6><span>&#8226;</span> ${x}</h6>`
+    }).join("");
     achieveId.innerHTML = myAchieve;
 
 
@@ -89,20 +89,22 @@ const exp = async () => {
 
             const { name, techStack, description } = obj;
             const desc = description.split(".");
-            let descObj = desc.map( (obj) => {
-                
-                return `
+            let descObj = desc.map((obj) => {
+
+               
+                return  ( obj.length !== 0) ? `
                     <ul class="list-desc">
                         <li >
-                            ${obj}
+                        <span>&#8226;</span> ${obj.trim()}.
                          </li>
                     </ul>
                 `
+                : "" 
 
             }).join("");
 
             return `
-            <div class="p-desc mx-3 my-2">
+            <div class="p-desc my-2">
                 <h5> Project- ${name} </h5>
                 <h6> ${techStack} </h6>
                 
@@ -116,7 +118,7 @@ const exp = async () => {
             <div class="mx-3 c-profile">
 
                 <div>
-                    <h4> ${company} &nbsp; </h4>
+                    <h4 > ${company} &nbsp; </h4>
                 </div>
                 <div style="width: 60%; margin-top: 5px;">
                     <h6>
@@ -137,11 +139,11 @@ exp();
 
 
 // fetch education details
-const educations = async() => {
+const educations = async () => {
     const myEdu = await fetchJson("./asset/education.json");
-    let eduObj = myEdu.map( (obj) => {
+    let eduObj = myEdu.map((obj) => {
 
-        const{course, from, year} = obj;
+        const { course, from, year } = obj;
 
         return `
         <div class="row"  style="font-weight: 500; font-size: medium;">
@@ -155,7 +157,7 @@ const educations = async() => {
             ${year}
         </div></div>
         `
-    } ).join("");
+    }).join("");
     eduDetails.innerHTML = eduObj;
 }
 

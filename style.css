@@ -4,9 +4,6 @@
 
 body {
     font-family: 'Mukta', sans-serif;
-    /* font-family: 'Noto Sans', sans-serif; */
-    /*font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif; */
 }
 
 .gen-border {
@@ -20,6 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    margin-top: 2px;
 }
 
 .font-heading {
@@ -54,9 +53,14 @@ li {
 }
 
 .p-desc {
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 1px solid #dbd9d9;
+    border-radius: 5px;
     padding-left: 10px;
+    box-shadow: 1px 1px 1px #b5b4b4;
+}
+
+.p-desc:hover{
+    box-shadow: none;
 }
 
 .table-header {
