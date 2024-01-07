@@ -9,8 +9,17 @@ const myContact = document.querySelector("#contacts");
 const headnameId = document.querySelector("#headname");
 const roleId = document.querySelector("#roles");
 const achieveId = document.querySelector("#achieve");
+const downloadResumeId = document.querySelector("#download-resume");
 
 
+function download(url) {
+    const a = document.createElement('a');
+    a.href = url ;
+    a.download = url.split('/').pop();
+    document.body.appendChild(a);
+    a.click()
+    document.body.removeChild(a);
+}
 
 const fetchJson = async (localJson) => {
     const res = await fetch(localJson);
@@ -51,7 +60,7 @@ const aboutMe = async () => {
     getAboutMeId.appendChild(h);
 
     myContact.innerHTML =
-        `
+    `
     <h6> ${phone} </h6>
     <h6> ${email} </h6>
     <h6> ${linkedIn} </h6>
@@ -105,8 +114,8 @@ const exp = async () => {
 
             return `
             <div class="p-desc my-2">
-                <h5> Project- ${name} </h5>
-                <h6> ${techStack} </h6>
+                <h4 style="color:#3D3C3A">Project- ${name} </h>
+                <h6> <strong> ${techStack} </strong> </h6>
                 
                 ${descObj}
                 

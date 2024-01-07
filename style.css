@@ -1,9 +1,9 @@
-
- @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
 
 body {
     font-family: 'Mukta', sans-serif;
+    word-wrap: break-word;
 }
 
 .gen-border {
@@ -59,7 +59,7 @@ li {
     box-shadow: 1px 1px 1px #b5b4b4;
 }
 
-.p-desc:hover{
+.p-desc:hover {
     box-shadow: none;
 }
 
@@ -76,4 +76,31 @@ li {
 
 .list-desc li {
     font-weight: 400;
+}
+
+.download-res {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.download {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #404040;
+}
+
+/* Tooltip text */
+.download-res .tooltiptext {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.download-res:hover .tooltiptext {
+    visibility: visible;
 }

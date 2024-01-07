@@ -17,13 +17,19 @@
 <body>
     <div class="container">
         <div class="row resume-header">
-            <div class="col-3">
-                <img style="width: 18vh; height: 18vh; 
+            <div class="col-2">
+                <img style="width: 8vw; height: 8vw; 
                 border: 2px solid #ccc9c9; 
-                border-radius: 50%; margin-left: 30%;" src="./asset/PP-PHOTO.jpg" />
+                border-radius: 50%;" src="./asset/PP-PHOTO.jpg" />
             </div>
-            <div class="col" id="headname">
+            <div class="col-8" id="headname">
                 <!-- added in script search for headnameId.innerHtml -->
+            </div>
+            <div class="col-1 download-res">
+                <img id="download-resume" class="download" onclick="download('./asset/SHESHANATH.pdf')"
+                    src="./asset/download.png" />
+
+                <span class="tooltiptext mx-3">Resume</span>
             </div>
         </div>
 
@@ -76,7 +82,7 @@
                 </div>
 
                 <div class="heading">
-                    <h2 style="font-style: italic;" class="heading-line">ACHIEVMENT</h2>
+                    <h2 style="font-style: italic;" class="heading-line">ACHIEVEMENT</h2>
                     <div class="row" style="color: #474747;" id="achieve">
                     </div>
                 </div>
