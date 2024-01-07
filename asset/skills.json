@@ -1,6 +1,6 @@
 [
     {
-        "TechnicalSkill": "Java, Spring-Boot, JPA, SQL, AWS, Angular, REST, Microservices",
-        "Tools": "Maven, Gradle, Git, Splunk, Jenkins, Docker, Postman"
+        "TechnicalSkill": "Java, Spring-Boot, JPA, SQL, AWS (EBS-RDS-EC2-S3), Angular10, REST, Microservices, OOP, Junit",
+        "Tools": "Maven, Gradle, Git, Splunk, Jenkins, Postman"
     }
 ]

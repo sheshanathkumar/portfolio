@@ -11,9 +11,9 @@
     "roles": [
         "Application development and deployment",
         "API creation, Management and testing",
-        "Maintain deployed application Cloud/ Local server",
-        "Code Review, Assurance of Code Quality",
-        "create and manage Splunk Database for applications",
+        "Maintain deployed application on cloud/ Local server",
+        "Code Review, Code Linting and Code Quality Assurance",
+        "Create and manage Splunk dashboard for applications",
         "CICD pipeline maintenance"
     ],
     "achievement": [
