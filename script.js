@@ -10,11 +10,27 @@ const headnameId = document.querySelector("#headname");
 const roleId = document.querySelector("#roles");
 const achieveId = document.querySelector("#achieve");
 const downloadResumeId = document.querySelector("#download-resume");
+const leftPannel = document.querySelector("#left-pannel");
+const rightPannel = document.querySelector("#right-pannel");
 
+let sidebar = false;
+
+function enableSidebar() {
+    console.log(sidebar)
+    sidebar = !sidebar;
+    if (sidebar === true) {
+        rightPannel.style.display = "none";
+        leftPannel.style.display = "block"
+
+    } else {
+        leftPannel.style.display = "none";
+        rightPannel.style.display = "block"
+    }
+}
 
 function download(url) {
     const a = document.createElement('a');
-    a.href = url ;
+    a.href = url;
     a.download = url.split('/').pop();
     document.body.appendChild(a);
     a.click()
@@ -60,7 +76,7 @@ const aboutMe = async () => {
     getAboutMeId.appendChild(h);
 
     myContact.innerHTML =
-    `
+        `
     <h6> ${phone} </h6>
     <h6> ${email} </h6>
     <h6> ${linkedIn} </h6>
@@ -100,15 +116,15 @@ const exp = async () => {
             const desc = description.split(".");
             let descObj = desc.map((obj) => {
 
-               
-                return  ( obj.length !== 0) ? `
+
+                return (obj.length !== 0) ? `
                     <ul class="list-desc">
                         <li >
                         <span>&#8226;</span> ${obj.trim()}.
                          </li>
                     </ul>
                 `
-                : "" 
+                    : ""
 
             }).join("");
 

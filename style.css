@@ -10,6 +10,30 @@ body {
     border: 1px solid black;
 }
 
+.left-pannel {
+    background-color: #0b8696;
+    border-radius: 5px;
+}
+
+.right-pannel {
+    border: 1px solid #797979;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.sidebar img {
+    margin-top: 10px;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #000;
+}
+
 .resume-header {
     height: 20vh;
     background-color: #0b8696;
@@ -88,7 +112,7 @@ li {
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
-    box-shadow: 1px 1px 5px #404040;
+    box-shadow: 2px 2px 10px #000;
 }
 
 /* Tooltip text */
@@ -103,4 +127,38 @@ li {
 /* Show the tooltip text when you mouse over the tooltip container */
 .download-res:hover .tooltiptext {
     visibility: visible;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .resume-header {
+        margin: 1px 1px;
+        padding: 0px;
+    }
+
+    #left-pannel {
+        width: auto;
+        margin-left: 1px;
+        display: none;
+    }
+
+    .resume-header h1 {
+        font-size: large;
+    }
+
+    .resume-header h4 {
+        font-size: medium;
+    }
+
+    .resume-header h6 {
+        font-size: small;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
 }

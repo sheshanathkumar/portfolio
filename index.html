@@ -21,6 +21,12 @@
                 <img style="width: 8vw; height: 8vw; 
                 border: 2px solid #ccc9c9; 
                 border-radius: 50%;" src="./asset/PP-PHOTO.jpg" />
+
+                <div class="sidebar">
+                    <img src="./asset/sidebar.jpg" 
+                    onclick="enableSidebar()" />
+                </div>
+                
             </div>
             <div class="col-8" id="headname">
                 <!-- added in script search for headnameId.innerHtml -->
@@ -33,8 +39,11 @@
             </div>
         </div>
 
+
+
+
         <div class="row my-2">
-            <div class="col-3" style="background-color: #0b8696; border-radius: 5px; ">
+            <div class="col-3 left-pannel" id="left-pannel">
                 <!-- Contact Details -->
                 <div class="heading">
                     <h2 style="font-style: italic;" class="heading-line">CONTACT</h2>
@@ -91,7 +100,7 @@
 
 
 
-            <div class="col" style="border: 1px solid #797979; border-radius: 5px; margin-left: 10px;">
+            <div class="col right-pannel" id="right-pannel">
                 <div class="heading">
                     <h2 style="font-style: italic;" class="heading-line">ABOUT ME</h2>
 
