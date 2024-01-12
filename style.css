@@ -144,21 +144,34 @@ li {
     visibility: hidden;
     backdrop-filter: blur(10px);
     margin-left: -20px;
+
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
 }
 
-.profile .image{
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile .image {
     width: 30%;
     height: 40%;
 }
 
 
-.profile .image img{
+.profile .image img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.detail{
+.detail {
     color: #0b8696;
     height: 30%;
 }
@@ -177,6 +190,8 @@ li {
         width: auto;
         margin-left: 2px;
         display: none;
+        animation: fadeInAnimation ease 1s;
+        animation-fill-mode: backwards;
     }
 
     .resume-header h1 {
@@ -200,28 +215,28 @@ li {
         height: 100%;
     }
 
-    .fixwidth .profile{
+    .fixwidth .profile {
         padding: 5% 5%;
         display: block;
         height: 100%;
         width: auto;
-        
+
     }
 
-    .profile .image{
+    .profile .image {
         width: auto;
         height: auto;
         padding: 10% 10%;
     }
-    
-    
-    .profile .image img{
+
+
+    .profile .image img {
         width: 100%;
         height: 100%;
         border-radius: 10px;
     }
 
-    .profile .detail{
+    .profile .detail {
         color: #000000;
         height: 30%;
         padding: 10% 10%;
