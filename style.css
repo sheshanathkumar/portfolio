@@ -129,19 +129,53 @@ li {
     visibility: visible;
 }
 
+.fixwidth {
+    width: 100%;
+    height: 100%;
+}
 
+.fixwidth .profile {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    backdrop-filter: blur(10px);
+    margin-left: -20px;
+}
+
+.profile .image{
+    width: 30%;
+    height: 40%;
+}
+
+
+.profile .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.detail{
+    color: #0b8696;
+    height: 30%;
+}
 
 
 @media screen and (max-width: 600px) {
 
     .resume-header {
-        margin: 1px 1px;
+        width: 90vw;
+        margin-left: 10px;
+        margin-top: 5px;
         padding: 0px;
     }
 
     #left-pannel {
         width: auto;
-        margin-left: 1px;
+        margin-left: 2px;
         display: none;
     }
 
@@ -159,6 +193,38 @@ li {
 
     .sidebar {
         display: block;
+    }
+
+    .fixwidth {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fixwidth .profile{
+        padding: 5% 5%;
+        display: block;
+        height: 100%;
+        width: auto;
+        
+    }
+
+    .profile .image{
+        width: auto;
+        height: auto;
+        padding: 10% 10%;
+    }
+    
+    
+    .profile .image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .profile .detail{
+        color: #000000;
+        height: 30%;
+        padding: 10% 10%;
     }
 
 }

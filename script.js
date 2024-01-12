@@ -12,8 +12,25 @@ const achieveId = document.querySelector("#achieve");
 const downloadResumeId = document.querySelector("#download-resume");
 const leftPannel = document.querySelector("#left-pannel");
 const rightPannel = document.querySelector("#right-pannel");
+const profileId = document.querySelector("#profile");
+
+
+
 
 let sidebar = false;
+let profilePic = false;
+
+function showProfile() {
+    
+    profilePic = !profilePic;
+    if ( profilePic === true ) {
+        profileId.style.visibility = 'visible';
+    }
+    else {
+        profileId.style.visibility = 'hidden';
+    }
+
+}
 
 function enableSidebar() {
     console.log(sidebar)
