@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 2px;
 }
 
@@ -30,7 +30,7 @@ body {
 .heading {
     font-size: large;
     font-weight: bolder;
-    color: #0b8696;
+    color: #000;
 }
 
 .heading-line {
