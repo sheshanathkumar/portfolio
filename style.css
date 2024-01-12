@@ -169,11 +169,14 @@ li {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px #353535;
 }
 
 .detail {
-    color: #0b8696;
-    height: 30%;
+    width: auto;
+    height: 40%;
+    color: #03535e;
 }
 
 
