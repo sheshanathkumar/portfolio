@@ -14,7 +14,7 @@ const leftPannel = document.querySelector("#left-pannel");
 const rightPannel = document.querySelector("#right-pannel");
 const profileId = document.querySelector("#profile");
 
-
+let emailTo = "https://mail.google.com/mail/?view=cm&fs=1&to=";
 
 
 let sidebar = false;
@@ -87,17 +87,18 @@ displaySkills();
 // fetching About me json file
 const aboutMe = async () => {
     const getAboutme = await fetchJson("./asset/misc-text.json");
-    const { name, tag, baseline, aboutMe, phone, email, linkedIn, location, roles, achievement } = getAboutme;
+    const { name, tag, baseline, aboutMe, phone, email, linkedIn, linkedInUrl,location, roles, achievement } = getAboutme;
     var h = document.createElement('h6');
     h.innerHTML = aboutMe;
     getAboutMeId.appendChild(h);
-
+    emailTo = emailTo+email;
+    console.log(emailTo);
     myContact.innerHTML =
-        `
-    <h6> ${phone} </h6>
-    <h6> ${email} </h6>
-    <h6> ${linkedIn} </h6>
-    <h6> ${location} </h6>
+    `
+    <h6> <i class="fa fa-phone"></i> ${phone} </h6>
+    <h6> <i class="fa fa-envelope"></i> <a href= '${emailTo}' target="_blank">  ${email} </a> </h6>
+    <h6> <i class="fa fa-linkedin"> </i> <a href= '${linkedInUrl}' target="_blank"> ${linkedIn} </a> </h6>
+    <h6> <i class="fa fa-map"></i> ${location} </h6>
     `
 
     headnameId.innerHTML = `

@@ -179,6 +179,15 @@ li {
     color: #03535e;
 }
 
+a {
+    color: #fff;
+}
+
+a:hover {
+    font-size: large;
+    color: #fff;
+}
+
 
 @media screen and (max-width: 600px) {
 
