@@ -21,9 +21,9 @@ let sidebar = false;
 let profilePic = false;
 
 function showProfile() {
-    
+
     profilePic = !profilePic;
-    if ( profilePic === true ) {
+    if (profilePic === true) {
         profileId.style.visibility = 'visible';
     }
     else {
@@ -87,14 +87,14 @@ displaySkills();
 // fetching About me json file
 const aboutMe = async () => {
     const getAboutme = await fetchJson("./asset/misc-text.json");
-    const { name, tag, baseline, aboutMe, phone, email, linkedIn, linkedInUrl,location, roles, achievement } = getAboutme;
+    const { name, tag, baseline, aboutMe, phone, email, linkedIn, linkedInUrl, location, roles, achievement } = getAboutme;
     var h = document.createElement('h6');
     h.innerHTML = aboutMe;
     getAboutMeId.appendChild(h);
-    emailTo = emailTo+email;
+    emailTo = emailTo + email;
     console.log(emailTo);
     myContact.innerHTML =
-    `
+        `
     <h6> <i class="fa fa-phone"></i> ${phone} </h6>
     <h6> <i class="fa fa-envelope"></i> <a href= '${emailTo}' target="_blank">  ${email} </a> </h6>
     <h6> <i class="fa fa-linkedin"> </i> <a href= '${linkedInUrl}' target="_blank"> ${linkedIn} </a> </h6>
@@ -126,7 +126,7 @@ aboutMe();
 const exp = async () => {
     const myExp = await fetchJson("./asset/experience.json");
     let expObj = myExp.map((object) => {
-        const { company, role, duration, projects } = object
+        const { company, companyUrl, role, duration, projects } = object
 
         let projectData = projects.map((obj) => {
 
@@ -161,7 +161,8 @@ const exp = async () => {
             <div class="mx-3 c-profile">
 
                 <div>
-                    <h4 > ${company} &nbsp; </h4>
+                    <h4> <a href="${companyUrl}" target="_blank">
+                      ${company} </a> &nbsp; </h4>
                 </div>
                 <div style="width: 60%; margin-top: 5px;">
                     <h6>
