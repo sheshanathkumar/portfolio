@@ -9,6 +9,8 @@
     "linkedInUrl" : "https://www.linkedin.com/in/sheshanath/",
     "company": "Kyndryl Pvt Ltd",
     "location": "Hyderabad",
+    "git" : "sheshanath-git",
+    "giturl" : "https://github.com/sheshanathkumar?tab=repositories",
     "roles": [
         "Application development and deployment",
         "API creation, Management and testing",

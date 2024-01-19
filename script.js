@@ -87,7 +87,8 @@ displaySkills();
 // fetching About me json file
 const aboutMe = async () => {
     const getAboutme = await fetchJson("./asset/misc-text.json");
-    const { name, tag, baseline, aboutMe, phone, email, linkedIn, linkedInUrl, location, roles, achievement } = getAboutme;
+    const { name, tag, baseline, aboutMe, phone, email, linkedIn, 
+        linkedInUrl, location, roles, achievement, git, giturl } = getAboutme;
     var h = document.createElement('h6');
     h.innerHTML = aboutMe;
     getAboutMeId.appendChild(h);
@@ -95,10 +96,11 @@ const aboutMe = async () => {
     console.log(emailTo);
     myContact.innerHTML =
         `
-    <h6> <i class="fa fa-phone"></i> ${phone} </h6>
-    <h6> <i class="fa fa-envelope"></i> <a href= '${emailTo}' target="_blank">  ${email} </a> </h6>
-    <h6> <i class="fa fa-linkedin"> </i> <a href= '${linkedInUrl}' target="_blank"> ${linkedIn} </a> </h6>
-    <h6> <i class="fa fa-map"></i> ${location} </h6>
+    <h6> <i class="fa fa-phone"></i> &nbsp; ${phone} </h6>
+    <h6> <i class="fa fa-envelope"></i> &nbsp; <a href= '${emailTo}' target="_blank">  ${email} </a> </h6>
+    <h6> <i class="fa fa-linkedin"> </i> &nbsp; <a href= '${linkedInUrl}' target="_blank"> ${linkedIn} </a> </h6>
+    <h6> <i class="fa fa-github"></i> &nbsp; <a href= '${giturl}' target="_blank">  ${git} </a>  </h6>
+    <h6> <i class="fa fa-map"></i> &nbsp; ${location} </h6>
     `
 
     headnameId.innerHTML = `
