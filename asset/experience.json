@@ -1,9 +1,22 @@
 [
     {
+        "company": "JPMorgan Chase & Co",
+        "companyUrl" : "https://www.jpmorganchase.com/",
+        "role": "Software Engineer 2",
+        "duration": "2024-till now",
+        "projects": [
+            {
+                "name": "Data Card",
+                "techStack": "AWS Glue + Athena + S3 ∙ Datalake ∙ Snowflak ∙ PySpark ∙ Java",
+                "description": "NA"
+            }
+        ]
+    },
+    {
         "company": "Kyndryl Pvt Ltd",
         "companyUrl" : "https://www.kyndryl.com/in/en",
         "role": "Sr. Associate Software Engineer",
-        "duration": "2022-till now",
+        "duration": "2022-2024",
         "projects": [
             {
                 "name": "BCOVT",
